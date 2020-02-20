@@ -1,0 +1,49 @@
+.drawer
+  box-shadow: 6px 0 18px rgba(0, 0, 0, 0.06)
+  z-index: 199 !important
+
+  .v-navigation-drawer__content
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    padding: 20px 5px 10px
+
+  .nav-divider
+    opacity: 0.3
+
+  .drawer__logo
+    background-size: contain
+    max-width: 180px
+    max-height: 58px
+    min-height: 48px
+    padding-bottom: 10px
+    margin: auto
+    display: flex
+    justify-content: center
+    align-items: center
+
+
+  .v-list
+    margin-top: 36px
+
+    .drawer-item
+      padding: 10px 28px
+
+      .drawer-item__icon
+        color: $cloudy-blue
+
+      .v-list-item__title
+        color: $cloudy-blue
+        font:
+          family: $font-family-base
+          size: $font-size-base
+          weight: $regular
+
+    .drawer-item--active
+      .drawer-item__icon
+        transition: all 300ms
+        color: $brand-primary
+
+      .v-list-item__title
+        color: $brand-primary
+        transition: all 300ms
